@@ -29,7 +29,9 @@ btnAddMoney.addEventListener("click", (event) => {
 
         const p = document.createElement('p');
         p.style.backgroundColor = "#4caf50";
-        p.style.marginTop = "5px";
+        p.style.padding = "3px 2px";
+        p.style.fontSize = "12px"
+        p.style.marginTop = "7px";
         p.style.color = "white";
 
         p.innerHTML = `$ ${amount} has been deposited. Balance $ ${updatedBalance}`;
