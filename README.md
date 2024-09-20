@@ -1,7 +1,7 @@
 
 <h2 align="center"> 🌟 Payoo Mobile Finance System! 🌟</h2>
 
-<h5> Take control of your finances like never before! Manage your funds with ease using our seamless, feature-packed system. ✨ </h5>
+<h5> Take control of your finances like never before! Manage your funds with using our seamless, feature-packed system. ✨ </h5>
 
 ### Features :
 - 🔒 **Secure Login -** Effortlessly log in with your phone & PIN to access your account.
