@@ -25,7 +25,14 @@ btnLogin.addEventListener('click', (event) => {
         }
         else
         {
-            alert("Please enter your Phone & Pin number!");
+             // Alert
+             const alertBox = getElementById('alert-box');
+             alertBox.style.display = 'block';
+             alertBox.style.backgroundColor = "#f44336";
+             alertBox.innerText = "Please enter your Phone & Pin number!";
+             setTimeout(() => {
+                 alertBox.style.display = 'none';
+             }, 2000); 
         }
 });
 

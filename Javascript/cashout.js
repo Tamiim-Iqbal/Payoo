@@ -40,9 +40,7 @@ btnCashout.addEventListener("click", (e) => {
 
             const p = document.createElement('p');
             p.style.backgroundColor = "#f44336";
-            p.style.padding = "5px 3px";
-            p.style.borderRadius = "5px";
-            p.style.marginTop = "7px";
+            p.style.marginTop = "5px";
             p.style.color = "white";
 
             p.innerHTML = `$ ${cashout} has been withdrawn. Balance $ ${newBalance}`;
@@ -65,6 +63,12 @@ btnCashout.addEventListener("click", (e) => {
     }
     else
     {
-        alert("Please enter your Amount & Pin number");
+        const alertBox = getElementById('alert-box');
+        alertBox.style.display = 'block';
+        alertBox.style.backgroundColor = "#f44336";
+        alertBox.innerText = "Please enter your Amount & Pin number!";
+        setTimeout(() => {
+            alertBox.style.display = 'none';
+        }, 2000);
     }
 })

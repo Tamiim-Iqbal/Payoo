@@ -29,9 +29,7 @@ btnAddMoney.addEventListener("click", (event) => {
 
         const p = document.createElement('p');
         p.style.backgroundColor = "#4caf50";
-        p.style.padding = "5px 3px";
-        p.style.borderRadius = "5px";
-        p.style.marginTop = "7px";
+        p.style.marginTop = "5px";
         p.style.color = "white";
 
         p.innerHTML = `$ ${amount} has been deposited. Balance $ ${updatedBalance}`;
@@ -52,6 +50,13 @@ btnAddMoney.addEventListener("click", (event) => {
     }
     else
     {
-        alert("Please enter your Amount & Pin number!");
+        // Alert
+        const alertBox = getElementById('alert-box');
+        alertBox.style.display = 'block';
+        alertBox.style.backgroundColor = "#f44336";
+        alertBox.innerText = "Please enter your Amount & Pin number!";
+        setTimeout(() => {
+            alertBox.style.display = 'none';
+        }, 2000); 
     } 
 });
