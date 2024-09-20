@@ -43,6 +43,7 @@ btnCashout.addEventListener("click", (e) => {
             p.style.padding = "3px 2px";
             p.style.fontSize = "12px"
             p.style.marginTop = "7px";
+            p.style.borderRadius = "10px";
             p.style.color = "white";
 
             p.innerHTML = `$ ${cashout} has been withdrawn. Balance $ ${newBalance}`;
